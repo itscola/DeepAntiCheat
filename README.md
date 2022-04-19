@@ -1,2 +1,4 @@
-# BukkitPluginTemplate
-A bukkit plugin template for rapid development.
+# DeepAntiCheat (DAC)
+A Bukkit plugin for detecting safe(ghost) hacker in server with deeplearning.
+
+
