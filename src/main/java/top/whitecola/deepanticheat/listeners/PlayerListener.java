@@ -1,4 +1,4 @@
-package top.whitecola.plugin.listeners;
+package top.whitecola.deepanticheat.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

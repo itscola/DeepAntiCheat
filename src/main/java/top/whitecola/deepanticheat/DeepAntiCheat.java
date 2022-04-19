@@ -1,25 +1,27 @@
-package top.whitecola.plugin;
+package top.whitecola.deepanticheat;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import top.whitecola.commandhandler.HiCommand;
 import top.whitecola.confighandler.HiConfig;
-import top.whitecola.plugin.commands.CommandVersion;
-import top.whitecola.plugin.configs.struct.PluginConfig;
-import top.whitecola.plugin.listeners.PlayerListener;
+import top.whitecola.deepanticheat.commands.CommandReport;
+import top.whitecola.deepanticheat.commands.CommandVersion;
+import top.whitecola.deepanticheat.configs.struct.PluginConfig;
+import top.whitecola.deepanticheat.detecting.DetectorManager;
+import top.whitecola.deepanticheat.listeners.PlayerListener;
 
 import java.nio.charset.Charset;
 
-public class BukkitPluginTemplate extends JavaPlugin {
-    private static BukkitPluginTemplate instacne;
+public class DeepAntiCheat extends JavaPlugin {
+    private static DeepAntiCheat instacne;
     {
         instacne = this;
     }
     private String pluginName = "plugin";
 
-    private HiCommand commands = new HiCommand(this,"pl");
+    private HiCommand commands = new HiCommand(this,"ac");
     private HiConfig<PluginConfig> config1 = new HiConfig<>(this.getDataFolder()+"/Config.json",PluginConfig.class, Charset.forName("utf8"),this);
-
+    private DetectorManager detector = new DetectorManager();
 
     @Override
     public void onEnable() {
@@ -42,7 +44,7 @@ public class BukkitPluginTemplate extends JavaPlugin {
     }
 
     public void registerCommands(){
-        commands.addCommand(new CommandVersion());
+        commands.addCommand(new CommandReport());
     }
 
     @Override
@@ -50,7 +52,7 @@ public class BukkitPluginTemplate extends JavaPlugin {
         super.onDisable();
     }
 
-    public static BukkitPluginTemplate getInstacne() {
+    public static DeepAntiCheat getInstacne() {
         return instacne;
     }
 

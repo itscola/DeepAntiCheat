@@ -1,9 +1,8 @@
-package top.whitecola.plugin.commands;
+package top.whitecola.deepanticheat.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 import top.whitecola.annotations.ItsACommand;
 import top.whitecola.commandhandler.ICommand;
 
