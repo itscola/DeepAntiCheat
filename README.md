@@ -1,4 +1,4 @@
-# DeepAntiCheat (DLAC)
+# DeepleAntiCheat (DLAC)
 A Bukkit plugin for detecting safe(ghost) hackers in Minecraft servers with deeplearning.    
 
 ## Todo: 
