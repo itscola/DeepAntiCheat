@@ -9,6 +9,7 @@ public class PlayerDatas {
         public String uuid;
         public Vector<AttackWrapper> attackWrappers = new Vector<>();
         public Vector<ClickWrapper> clickWrappers = new Vector<>();
+        public Vector<HurtWrapper> hurtWrappers = new Vector<>();
     }
 
     class AttackWrapper{
@@ -18,10 +19,16 @@ public class PlayerDatas {
         long damagePlayerTimes;
         long steps;
         long rightClickTimes;
+        long attackPacketNumber;
+        long hurtTimes;
     }
 
     class ClickWrapper{
         long period;
         long damageTimes;
+    }
+
+    class HurtWrapper{
+        long period;
     }
 }
