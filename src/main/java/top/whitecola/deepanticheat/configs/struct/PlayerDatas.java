@@ -29,6 +29,7 @@ public class PlayerDatas {
         long totalRising;
         long swordBlockTotalTime;
         long totalVelocity;
+        long putBlockTimes;
     }
 
     class ClickWrapper{
