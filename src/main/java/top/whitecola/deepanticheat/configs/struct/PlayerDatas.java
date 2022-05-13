@@ -25,6 +25,7 @@ public class PlayerDatas {
         long noAimingTimes;
         long averagePing;
         long averageTPS;
+        long averageCPS;
         long totalRising;
         long swordBlockTotalTime;
         long totalVelocity;
