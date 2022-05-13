@@ -19,8 +19,15 @@ public class PlayerDatas {
         long damagePlayerTimes;
         long steps;
         long rightClickTimes;
-        long attackPacketNumber;
+        long attackPacketTimes;
         long hurtTimes;
+        long jumpTimes;
+        long noAimingTimes;
+        long averagePing;
+        long averageTPS;
+        long totalRising;
+        long swordBlockTotalTime;
+        long totalVelocity;
     }
 
     class ClickWrapper{
