@@ -17,7 +17,7 @@ public class PlayerDatas {
         long attackTimes;
         long attackTotalDistance;
         long damagePlayerTimes;
-        long steps;
+        long stepTick;
         long rightClickTimes;
         long attackPacketTimes;
         long hurtTimes;
@@ -30,6 +30,7 @@ public class PlayerDatas {
         long swordBlockTotalTime;
         long totalVelocity;
         long putBlockTimes;
+        long moveCameraTick;
     }
 
     class ClickWrapper{
